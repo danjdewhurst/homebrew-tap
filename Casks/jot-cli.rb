@@ -3,7 +3,7 @@ cask "jot-cli" do
   name "jot-cli"
   desc "A fast, context-aware notes tool for the terminal"
   homepage "https://github.com/danjdewhurst/jot-cli"
-  version "0.4.2"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "jot-cli" do
   on_macos do
     on_intel do
       url "https://github.com/danjdewhurst/jot-cli/releases/download/v#{version}/jot-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "bc1c78206d9cba449092137018658e28df28c11e261c0269162e562938f7a628"
+      sha256 "60feca7b7c52381bfb750a05d41685d6ffa44a791bbdbf8860cce02f6a26c823"
     end
     on_arm do
       url "https://github.com/danjdewhurst/jot-cli/releases/download/v#{version}/jot-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "4750a9a95208b1dbb9e41921beb23a53ed50ae043845edd8c98add16022c6289"
+      sha256 "2179e916a5f7c1e6381d5e513190a96567d2468c5cb409c9d8226c36a8c03cb6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/danjdewhurst/jot-cli/releases/download/v#{version}/jot-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "e27fc950e2230f6cb1021af38f4dde5ffe9ad3538a864336f5d5bbd08e3af305"
+      sha256 "85e4ab74b6e6ecbe25e2f0b4b9031969bd3e4e5ddb37af40503b07bc2eddf80b"
     end
     on_arm do
       url "https://github.com/danjdewhurst/jot-cli/releases/download/v#{version}/jot-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "4c91c863da23a226f9a0257f3dd366d8cc324c81818a0f47e39deae7600f4916"
+      sha256 "83d612c977cec9b11e280dced31f8080445abb529949a2e8ae5cb34cc431facc"
     end
   end
 
