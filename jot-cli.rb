@@ -5,13 +5,13 @@
 class JotCli < Formula
   desc "A fast, context-aware notes tool for the terminal"
   homepage "https://github.com/danjdewhurst/jot-cli"
-  version "0.3.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.3.0/jot-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "59a86dc524cd45c20fb52699fa614133ff068b90fa1f050399019c30b613d055"
+      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.4.1/jot-cli_0.4.1_darwin_amd64.tar.gz"
+      sha256 "f2fb06012275627af96c5182558c4b8ee813d2789e4ccfbbd4bf9175a8746941"
 
       define_method(:install) do
         bin.install "jot-cli"
@@ -19,8 +19,8 @@ class JotCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.3.0/jot-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "dd572157e48bac5cbb54e79c4f7e6f0287a4b1f9626d4d2d241ce93eb75fad25"
+      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.4.1/jot-cli_0.4.1_darwin_arm64.tar.gz"
+      sha256 "746a6a0308c2c001cb4fbe254f3f2a92549d833b0e5efe115c9f28caa8ecb038"
 
       define_method(:install) do
         bin.install "jot-cli"
@@ -31,16 +31,16 @@ class JotCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.3.0/jot-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "c471250b4e066c69ea78a60fe67678dfd405caf4aa0375c618caaa35dd129b94"
+      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.4.1/jot-cli_0.4.1_linux_amd64.tar.gz"
+      sha256 "6ef4ee2de116bca04782aa1071d6039e90e7f42c1872bb4f0bd6b12c0108f40b"
       define_method(:install) do
         bin.install "jot-cli"
         bin.install_symlink "jot-cli" => "j"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.3.0/jot-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "9c0ad8c3a4ce5fd04e6db3b416b8aed7084c465d2b2fbe5f76d18d5a475cec6c"
+      url "https://github.com/danjdewhurst/jot-cli/releases/download/v0.4.1/jot-cli_0.4.1_linux_arm64.tar.gz"
+      sha256 "4ae4a1b9b684cee2040f988aeac3c5a2f03fffd202d2bfbd5266d4d9f33f14f7"
       define_method(:install) do
         bin.install "jot-cli"
         bin.install_symlink "jot-cli" => "j"
