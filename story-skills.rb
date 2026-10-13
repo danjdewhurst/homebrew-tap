@@ -6,28 +6,28 @@
 class StorySkills < Formula
   desc "Companion CLI for Story Skills: validate, check, and build markdown story projects"
   homepage "https://github.com/danjdewhurst/story-skills"
-  version "0.23.2"
+  version "0.24.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.23.2/story-skills_0.23.2_darwin_arm64.tar.gz"
-      sha256 "1a7fc34475482b2049ab557e07aadbe4ded8ffb7cdd736ea8361b7e3e261b59d"
+      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.24.0/story-skills_0.24.0_darwin_arm64.tar.gz"
+      sha256 "3f8b8709f304a47b692cd99ba9dda6d1efac63cccf1d5620dbce7abbc0edcd46"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.23.2/story-skills_0.23.2_darwin_x64.tar.gz"
-      sha256 "1337a08cbab85faca50a6970aea2701894b98613aab521edc06aecd337d63a1c"
+      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.24.0/story-skills_0.24.0_darwin_x64.tar.gz"
+      sha256 "1de2fe0eafb695b72d25a30e14ac84fc575ba8bac15881971e89c436746acf35"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.23.2/story-skills_0.23.2_linux_arm64.tar.gz"
-      sha256 "9e7e00beb22c633616d6c026683585ce9a01e412d9378f59286230c9727fb3a9"
+      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.24.0/story-skills_0.24.0_linux_arm64.tar.gz"
+      sha256 "140df679a31763c738b6f04c2833646a18f3daf438461df359540e275a4c3e5f"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.23.2/story-skills_0.23.2_linux_x64.tar.gz"
-      sha256 "e694a0bf218c22901c866f4058af05dfb5e55616396c593e421b3ade2a4f2e35"
+      url "https://github.com/danjdewhurst/story-skills/releases/download/v0.24.0/story-skills_0.24.0_linux_x64.tar.gz"
+      sha256 "6b7143d87451a2a5a17bb29af91a79933b414dfe7e6e85d585f255229cfa938a"
     end
   end
 
@@ -36,6 +36,6 @@ class StorySkills < Formula
   end
 
   test do
-    assert_equal "0.23.2", shell_output("#{bin}/story --version").strip
+    assert_equal "0.24.0", shell_output("#{bin}/story --version").strip
   end
 end
